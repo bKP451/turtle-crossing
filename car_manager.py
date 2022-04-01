@@ -14,8 +14,8 @@ class CarManager:
         self.increase = 0
 
     def generate_car(self):
-        choice_of_getting_five = random.randint(1, 6)
-        if choice_of_getting_five == 5:
+        choice_of_getting_five = random.randint(1, 3)
+        if choice_of_getting_five == 2:
             new_car = Turtle()
             new_car.shape('square')
             new_car.shapesize(stretch_wid=1, stretch_len=2)

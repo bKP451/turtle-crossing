@@ -7,11 +7,13 @@ import player
 
 screen = Screen()
 screen.setup(width=600, height=600)
+screen.title("Turtle Crossing")
 screen.tracer(0)
 turtle_player = Player()
 # listen up for user key
 screen.listen()
-screen.onkey(fun=turtle_player.user_input, key="Up")
+screen.onkey(fun=turtle_player.user_input_up, key="Up")
+screen.onkey(fun=turtle_player.user_input_down, key="Down")
 car = CarManager()
 
 
